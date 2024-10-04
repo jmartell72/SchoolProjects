@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is styles for default header and footer  -->
+    <link href="header,nav,footer.css" rel="stylesheet">
+    <!-- Styles for this sheet  -->
+    <link href="indexstyles.css" rel="stylesheet">
+    <title>HomePage - Book Haven Bookstore</title>
+</head>
+
+<div id="topstick">
+    <!--Default header  -->
+    <header>
+        <a href="index.html"> <img src="images/Logo.png" alt="logo"></a>
+        <h1>Book Haven Bookstore</h1>
+        <h1 id='subtitle'>Homepage</h1>
+    </header>
+
+    <!-- Menu for mobile once responsive -->
+    <nav>
+        <div id="mobilemenu">
+            <img src='images/icons8-hamburger-menu-500.png' alt='Hamburger Menu icon by Icons8'>
+            <ul id="burgerbar">
+                <div id="logobox">
+                    <a href="index.html"> <img src="images/Logo.png" alt="logo" id="navlogo"></a>
+                </div>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <!-- Normal size menu  -->
+        <div id="fullmenu">
+            <div id="bar">
+                <ul>
+                    <li><a href="index.html">HomePage</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+    </nav>
+</div>
+<main>
+
+    <body>
+        <!-- Top intro layed out for CSS styling -->
+        <div id="topintro">
+            <h1>Welcome to Book Haven Bookstore!</h1>
+            <p>Please review our latest offers below! Also make sure to visit our bookclub and join the discussion!
+            </p>
+        </div>
+        <!-- Promobox holder for CSS styling  -->
+        <div class="promobox">
+            <!-- Individual Item on promo with an image and store link  -->
+            <div class="individualbox">
+                <a href="gallery.html#stickers"><img src="images/products/Client3_Stickers.png" alt="Stickers"> </a>
+                <div id="description">
+                    <h4>Stickers</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores aperiam quaerat impedit
+                        qui
+                        iure aspernatur facilis ut. Fugit nesciunt voluptates deserunt ipsum</p>
+                </div>
+
+            </div>
+            <div class="individualbox">
+                <a href="Gallery.html#notebook"><img src="images/products/Client3_Notebook.png" alt="notebook"> </a>
+                <div id="description">
+                    <h4>Notebook</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores aperiam quaerat impedit
+                        qui
+                        iure aspernatur facilis ut. Fugit nesciunt voluptates deserunt ipsum</p>
+                </div>
+
+            </div>
+            <div class="individualbox">
+                <a href="Gallery.html#totebag"><img src="images/products/Client3_ToteBag.png" alt="Totebag"> </a>
+                <div id="description">
+                    <h4>Totebag</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores aperiam quaerat impedit
+                        iure aspernatur facilis ut. Fugit nesciunt voluptates deserunt ipsum</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Soft intro for company with link to about us  -->
+        <div id="softIntro">
+            <h3>Welcome to the family!</h3>
+            <p>We are a small family owned bookshop, so come on in and introduce yourself to us! Sally is our front
+                desk clerk, Kelly is our librarian, and Kira is our manager!
+                <br><br>
+                Interested in more? Check out our <a href="AboutUs.html">about us!</a>
+            </p>
+        </div>
+    </body>
+</main>
+
+<!-- Default footer  -->
+<footer>
+    <!-- Social Media links  -->
+    <div class="navlinks" id="footericons">
+        <ul>
+            <li><img src="images/icons8-facebook-480.png" alt="Facebook icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-instagram-480.png" alt="Instagram icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-twitter-480.png" alt="Twitter Icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-youtube-480.png" alt="YouTube icon by Icons 8" class="icon"></li>
+        </ul>
+    </div>
+    <!-- Small div for the border to make the field look ok -->
+    <div class="border-end"></div>
+    <!-- Signup form  -->
+    <div id="signup">
+        <form name="subscribeform" id="subscribeform" onsubmit="alert('Thank you for subscribing!')">
+            <h4>Sign up for our Newsletter</h4>
+            <input type=" email" name="email" id="email" required><br>
+            <input type="submit" value="Subscribe" id="subscribe">
+        </form>
+
+    </div>
+    <div class="border-end"></div>
+    <!-- Random footer links  -->
+    <div id="footerlinks" class="navlinks">
+        <ul>
+            <li><a href="legal.html">Legal</a></li>
+            <li><a href="Bookclub.html">BookClub</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- Links to the js. Subscribe is for footer JS -->
+<script src="subscribe.js"></script>
+</div>
+
+</html>

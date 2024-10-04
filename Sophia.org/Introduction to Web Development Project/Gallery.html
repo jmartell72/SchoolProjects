@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles for this sheet  -->
+    <link href="Gallerystyles.css" rel="stylesheet">
+    <!--This is styles for default header and footer  -->
+    <link href="header,nav,footer.css" rel="stylesheet">
+    <title>Gallery - Book Haven Bookstore</title>
+</head>
+
+
+
+<!-- Cart div is at top and default is hidden  -->
+<div id="cart" class="hidden">
+    <!-- Sets the bar for the top of the cart, flexbox is used so blank divs are spacers  -->
+    <div id="topOfCart">
+        <div id="spacer1"></div>
+        <h1>Cart</h1>
+        <div id="spacer2"></div>
+        <button id="closeCart">X</button>
+    </div>
+    <!-- Holder for cart items. JS will inject HTML required for each cart item. Default is cart is empty.  -->
+    <div id="itemsInCart">
+        <h2 style="font-size: 20px">Cart is Empty</h2>
+    </div>
+    <!-- Box for the bottom of cart buttons. again flexbox with blank divs for spacers  -->
+    <div id="cartButtons">
+        <div id="spacer4"></div>
+        <button id="ClearCart">Clear Cart</button>
+        <div id="spacer5"></div>
+        <button id="ProcessOrder">Process Order</button>
+        <div id="spacer6"></div>
+    </div>
+</div>
+</div>
+
+
+<!-- Important for this page. This is blur once cart is 'viewed'  -->
+<div id="everything" class="">
+    <!--Default header  -->
+    <header>
+        <a href="index.html"> <img src="images/Logo.png" alt="logo"></a>
+        <h1>Book Haven Bookstore</h1>
+        <h1 id='subtitle'>Gallery</h1>
+    </header>
+    <nav>
+        <!-- Menu for mobile once responsive -->
+        <div id="mobilemenu">
+            <img src='images/icons8-hamburger-menu-500.png' alt='Hamburger Menu icon by Icons8'>
+            <ul id="burgerbar">
+                <div id="logobox">
+                    <a href="index.html"> <img src="images/Logo.png" alt="logo" id="navlogo"></a>
+                </div>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <!-- Normal size menu  -->
+        <div id="fullmenu">
+            <div id="bar">
+                <ul>
+                    <li><a href="index.html">HomePage</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <main>
+        <!-- Top h1  -->
+        <div id="gh1">
+            <h1>Books For Sale!</h1>
+        </div>
+        <!-- Holds the view cart button  -->
+        <div id="Intro">
+            <button id="ViewCart">View Cart</button>
+        </div>
+        <!-- These are the indiviual product boxes  -->
+        <div class="productbox">
+            <!-- individual box is layered for css layout  -->
+            <div class="individualbox" id="Book1">
+                <!-- spawns the image separate from the rest of the content for flexbox  -->
+                <img src="images/products/Client3_Book1.png" class="productimage">
+                <!-- holds the rest of the items for flex box to be able to display correctly  -->
+                <div class="internalbox">
+                    <h3>Brie Mine 4Ever</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <!-- Addtocart button; uses a inline JScript in order to have the proper item submitted to the cart -->
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Book1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Book2">
+                <img src="images/products/Client3_Book2.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Glory Riders</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime
+                        libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Book2')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Book3">
+                <img src="images/products/Client3_Book3.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Sorcerer's Shadowed Chronicles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime
+                        libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Book3')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Magazine1">
+                <img src="images/products/Client3_Magazine1.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Ball Magazine</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime
+                        libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Magazine1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Magazine2">
+                <img src="images/products/Client3_Magazine2.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Travel Magazine</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime
+                        libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Magazine2')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Magazine3">
+                <img src="images/products/Client3_Magazine3.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Eat Magazine</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam maxime
+                        libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Magazine3')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Notebook">
+                <img src="images/products/Client3_Notebook.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Notebook</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam
+                        maxime libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Notebook')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox" id="Stickers">
+                <img src="images/products/Client3_Stickers.png" class="productimage">
+                <div class="internalbox">
+                    <h3>Stickers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam
+                        maxime libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('Stickers')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="individualbox">
+                <img src="images/products/Client3_ToteBag.png" class="productimage">
+                <div class="internalbox">
+                    <h3 id="Totebag">ToteBag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae magnam
+                        maxime libero
+                        rerum
+                        inventore commodi consequatur molestiae cupiditate!</p>
+                    <div id="addtocart">
+                        <button class="Addtocart" onclick="addItemToCart('ToteBag')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Default footer  -->
+    <footer>
+        <!-- Social Media links  -->
+        <div class="navlinks" id="footericons">
+            <ul>
+                <li><img src="images/icons8-facebook-480.png" alt="Facebook icon by Icons 8" class="icon"></li>
+                <li><img src="images/icons8-instagram-480.png" alt="Instagram icon by Icons 8" class="icon"></li>
+                <li><img src="images/icons8-twitter-480.png" alt="Twitter Icon by Icons 8" class="icon"></li>
+                <li><img src="images/icons8-youtube-480.png" alt="YouTube icon by Icons 8" class="icon"></li>
+            </ul>
+        </div>
+        <!-- Small div for the border to make the field look ok -->
+        <div class="border-end"></div>
+        <div id="signup">
+            <form name="subscribeform" id="subscribeform" onsubmit="alert('Thank you for subscribing!')">
+                <h4>Sign up for our Newsletter</h4>
+                <input type=" email" name="email" id="email" required><br>
+                <input type="submit" value="Subscribe" id="subscribe">
+            </form>
+
+        </div>
+        <div class="border-end"></div>
+        <!-- Random footer links  -->
+        <div id="footerlinks" class="navlinks">
+            <ul>
+                <li><a href="legal.html">Legal</a></li>
+                <li><a href="Bookclub.html">BookClub</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Links to the js. Subscribe is for footer JS -->
+    <script src="subscribe.js"></script>
+    <script src="gallery.js"></script>
+</div>
+
+</html>

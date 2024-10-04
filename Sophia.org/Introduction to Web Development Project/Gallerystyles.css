@@ -1,0 +1,264 @@
+#gh1 {
+    text-align: center;
+}
+
+#Intro {
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+
+/* Aligns the view cart button  */
+#Intro button {
+    font-size: 16px;
+    height: 45px;
+    width: 250px;
+    margin-bottom: 40px;
+    padding: 12px;
+    position: relative;
+}
+
+/* Starts the stylizing of the individual item boxes  */
+.productbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid #2E2E4E 2px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+
+}
+
+
+.individualbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #2E2E4E 2px;
+}
+
+.productimage {
+    margin-top: 1.1rem;
+    width: 10rem;
+    display: flex;
+}
+
+/* Sets the right div (img on left) of each internal item into its own box that is layered top to bottom */
+.internalbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.internalbox h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.internalbox p {
+    padding-left: 2rem;
+    padding-right: 5px;
+    margin-top: 0px;
+}
+
+/* Adjusts each add to cart button  */
+#addtocart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+    margin-top: 14px;
+}
+
+/* This starts the carts stylizing. This will hide it when the cart is not being viewed */
+.hidden {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+/* Blurs the background when the cart is viewed  */
+.bg-image {
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Position the cart in the middle of the page and sets its size */
+#cart {
+    background-color: #F7F7F7;
+    color: #3F5461;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+    z-index: 2;
+}
+
+/* This and proceeding items set top of cart spacing */
+#topOfCart {
+    display: flex;
+}
+
+#spacer1 {
+    flex: 40%;
+    visibility: hidden;
+}
+
+#topOfCart h1 {
+    text-align: center;
+    float: left;
+    flex: 20%;
+}
+
+#spacer2 {
+    flex: 35%;
+    visibility: hidden;
+}
+
+/* This stylizes the close button at the top right  */
+#topOfCart button {
+    float: right;
+    flex: 5%;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: #F7F7F7;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Stylizes each indiviual cart item that is injected by JS  */
+#itemsInCart {
+    display: flex;
+    border: solid #2E2E4E 2px;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cartItem img {
+    height: 7rem;
+
+}
+
+#desc {
+    display: relative;
+}
+
+h3 {
+    float: left;
+    padding-top: 3px;
+}
+
+p {
+    float: right;
+    padding-right: 10px;
+}
+
+/* Sets the spacing for the bottom of cart buttons  */
+#cartButtons {
+    display: flex;
+    margin-top: 40px;
+
+}
+
+#spacer4 {
+    flex: 13%;
+}
+
+#ClearCart {
+    flex: 33%;
+    padding: 10px;
+}
+
+#spacer5 {
+    flex: 8%;
+}
+
+#ProcessOrder {
+    flex: 33%;
+    padding: 10px;
+}
+
+#spacer6 {
+    flex: 13%;
+}
+
+
+/* Allows Gallery to be responsive and adjusts items as such  */
+@media all and (min-width: 655px) {
+    #Intro {
+        height: 4rem;
+        text-align: center;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    #Intro button {
+        font-size: 14px;
+        margin-top: -25px;
+        margin-right: 12px;
+    }
+
+    #Intro div {
+        flex: 9.5%;
+        margin: 0px
+    }
+
+    #ClearCart {
+        flex: 27%
+    }
+
+    #ViewCart {
+        flex: 27%;
+    }
+
+
+    #ProcessOrder {
+        flex: 27%;
+    }
+
+    .productbox {
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-grow: 3;
+    }
+
+    .individualbox {
+        flex-direction: row;
+        flex: 25%;
+        padding: 8px;
+
+    }
+
+    .internalbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productimage {
+        margin-top: 3rem;
+        width: 10rem;
+        height: 9rem;
+    }
+
+
+}

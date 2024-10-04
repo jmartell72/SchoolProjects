@@ -1,0 +1,74 @@
+/* Sets the nextbook to flex box and then column to align everything  */
+#nextbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid #2E2E4E 2px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+/* Removes the default styling from the anchor to make it more uniform with site styling  */
+#nextbook a {
+    text-transform: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+}
+
+#nextbook h3 {
+    margin-bottom: 0px;
+}
+
+/* changes the image for the next book  */
+#nextbook img {
+    display: flex;
+    width: 12rem;
+}
+
+/* Sets the discussion box in order to align its children  */
+#discussionbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid #2E2E4E 2px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#discussionbox h2 {
+    border-bottom: solid #2E2E4E 2px;
+}
+
+#currentbook {
+    border-bottom: solid #2E2E4E 2px;
+    display: box;
+}
+
+#currentbook h3 {
+    float: left;
+}
+
+#currentbook img {
+    padding-left: 5rem;
+    width: 9rem
+}
+
+.reviewresponse {
+    border-bottom: solid #2E2E4E 2px;
+}
+
+.reviewresponse h4 {
+    text-align: right;
+}
+
+#lastbox {
+    border: none;
+}

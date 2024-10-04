@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles for this sheet  -->
+    <link href="AboutUsstyles.css" rel="stylesheet">
+    <!--This is styles for default header and footer  -->
+    <link href="header,nav,footer.css" rel="stylesheet">
+    <title>About Us - Book Haven Bookstore</title>
+    <!-- Jquery is used in this pages scripts  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"> </script>
+</head>
+
+<!--Default header  -->
+<header>
+    <a href="index.html"> <img src="images/Logo.png" alt="logo"></a>
+    <h1>Book Haven Bookstore</h1>
+    <h1 id='subtitle'>About Us</h1>
+</header>
+<!-- Menu for mobile once responsive -->
+<nav>
+    <div id="mobilemenu">
+        <img src='images/icons8-hamburger-menu-500.png' alt='Hamburger Menu icon by Icons8'>
+        <ul id="burgerbar">
+            <div id="logobox">
+                <a href="index.html"> <img src="images/Logo.png" alt="logo" id="navlogo"></a>
+            </div>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+
+    <!-- Normal size menu  -->
+    <div id="fullmenu">
+        <div id="bar">
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+</nav>
+<main>
+    <!-- Small About us section up top  -->
+    <div id="AboutUs">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt quisquam quidem, asperiores
+            inventore commodi eos dignissimos doloribus deleniti. Nobis iusto tenetur reiciendis vitae cumque error
+            vel et similique. Nisi.</p>
+    </div>
+
+    <!-- Section for the books of the month  -->
+    <div id="botm">
+        <h2>Books of the Month</h2>
+        <table>
+            <tr>
+                <td>
+                    <!-- Individual item with link to the store page -->
+                    <h3>Brie Mine 4Ever</h3><a href="gallery.html#book1"><img src="images/products/Client3_Book1.png"
+                            alt="Book1"></a>
+                </td>
+                <td>
+                    <!-- Individual item with link to the store page -->
+                    <h3>Glory Riders</h3><a href="gallery.html#book2"><img src="images/products/Client3_Book2.png"
+                            alt="Book2"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Individual item with link to the store page -->
+                    <h3>Ball Magazine</h3><a href="gallery.html#magazine1"><img
+                            src="images/products/Client3_Magazine1.png" alt="Magazine1"></a>
+                </td>
+                <td>
+                    <!-- Individual item with link to the store page -->
+                    <h3>Travel Magazine</h3><a href="gallery.html#magazine2"><img
+                            src="images/products/Client3_Magazine2.png" alt="Magazine2"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form for the feedback  -->
+    <div id="requestform">
+        <form action="" method="post" id="requestform" name="requestform">
+            <h3>Customer Feedback</h3>
+            <fieldset>
+                <label for="name">Name:</label><br>
+                <!-- Name field with an id of name  -->
+                <input type="text" name="name" id="name" class="resizedTextbox"><br>
+                <label for="email2">Email Address:</label><br>
+                <!-- Email field with id of email2 due to subscribe below being the default email  -->
+                <input type="email" name="email" id="email2" class="resizedTextbox"><br>
+                <label for="phonenumber">Phone Number:</label><br>
+                <!-- Phone filed with an id of phone number  -->
+                <input type="tel" name="phonenumber" id="phonenumber" class="resizedTextbox"><br>
+                <label id="feedbacklabel" for="feedback">Anything you would like us to know?:</label><br>
+                <!-- Textarea with an id of feed back  -->
+                <textarea name="feedback" id="feedback"></textarea>
+            </fieldset>
+            <div id="formbuttons">
+                <!-- Submit and reset buttons  -->
+                <input type="submit" value="Submit" id="submit" class="formbuttons" aria-label="submit">
+                <input type="reset" value="Clear Form" id="clear" class="formbuttons" aria-label="reset">
+            </div>
+        </form>
+    </div>
+</main>
+
+<!-- Default footer  -->
+<footer>
+    <!-- Social Media links  -->
+    <div class="navlinks" id="footericons">
+        <ul>
+            <li><img src="images/icons8-facebook-480.png" alt="Facebook icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-instagram-480.png" alt="Instagram icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-twitter-480.png" alt="Twitter Icon by Icons 8" class="icon"></li>
+            <li><img src="images/icons8-youtube-480.png" alt="YouTube icon by Icons 8" class="icon"></li>
+        </ul>
+    </div>
+    <!-- Small div for the border to make the field look ok -->
+    <div class="border-end"></div>
+    <!-- Signup form  -->
+    <div id="signup">
+        <form name="subscribeform" id="subscribeform" onsubmit="alert('Thank you for subscribing!')">
+            <h4>Sign up for our Newsletter</h4>
+            <!-- Other email button  -->
+            <input type=" email" name="email" id="email" required><br>
+            <!-- Other submit button in order to be separate on the JS  -->
+            <input type="submit" value="Subscribe" id="subscribe">
+        </form>
+
+    </div>
+    <div class="border-end"></div>
+    <!-- Random footer links  -->
+    <div id="footerlinks" class="navlinks">
+        <ul>
+            <li><a href="legal.html">Legal</a></li>
+            <li><a href="Bookclub.html">BookClub</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+</footer>
+</div>
+
+<!-- Links to the js. Subscribe is for footer JS -->
+<script src="aboutus.js"></script>
+<script src="subscribe.js"></script>
+
+</html>
