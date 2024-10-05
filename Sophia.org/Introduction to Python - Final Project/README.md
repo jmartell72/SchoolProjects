@@ -1,6 +1,6 @@
-<h1>Memory Game - Introduction to Python</h1>
+<h1>Introduction to Python - Final Project</h1>
 
-<h2>- Final Project</h2>
+<h2>- Memory Game</h2>
 
 <!-- This is used for my webpage which you can check out at: -->
 <div id="carouselHolder"></div>
