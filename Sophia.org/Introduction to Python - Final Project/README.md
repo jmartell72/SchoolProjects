@@ -24,7 +24,7 @@ The `buildNumberSystem` takes the amount of cards that are saved in settings, du
 `revealedCards` takes a new obscuredBoard, the actual board being used, and the two cards selected by the user. It then searches the board for the two coordinates selected and shows the values for that card. It then compares `card1BoardValue` to `card2BoardValue` and returns if the match is true or not.</p>
 
 <hr width="70%" border="1px solid black">
-<img src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Main_Menu.png?raw=true" alt="Main Menu screen" height="250">
+<img id="main" src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Main_Menu.png?raw=true" alt="Main Menu screen" height="250">
 
 <p class="explanationP">Moving down into the `game()`, there are values that are set as function global variables for the entire program to use. The `mainMenu()` contains the, you guessed it, Main Menu. If Settings was somehow bypassed, it will just greet the user as defaultUser and then requests them to select a menu option. Based on the user's choice, it will run the appropriate function of the program.
 
