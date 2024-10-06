@@ -44,7 +44,7 @@ The `buildNumberSystem` takes the amount of cards that are saved in settings, du
 
 <p class="explanationP">The program moves into another `while` loop in order to make sure the coordinates the user entered are within bounds, `card2` is not a duplicate of `card1`, and if a string is entered that cannot be formatted, it will request that the card's coordinates be re-entered. This loop will also catch a `sys.exit()` and then exit the program.
 
-The program then sets a variable `obscure` to be an obscured board and then runs 'revealedCards()` and prints out the new obscured board. It evaluates if match is true; if true, it will notify the user and request the user to enter any key to move on. Once moved on, it will clear the console and check to see if foundCards matches all card values. If it does match, it will break the while loop and run the win script below. If match is false, it will deduct a life, request the user enter any key to continue, and then continue the program.</p>
+The program then sets a variable `obscure` to be an obscured board and then runs `revealedCards()` and prints out the new obscured board. It evaluates if match is true; if true, it will notify the user and request the user to enter any key to move on. Once moved on, it will clear the console and check to see if foundCards matches all card values. If it does match, it will break the while loop and run the win script below. If match is false, it will deduct a life, request the user enter any key to continue, and then continue the program.</p>
 
 <hr width="70%" border="1px solid black">
 <img src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Lose.png?raw=true" alt="Lose screen" height="70">
