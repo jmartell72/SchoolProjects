@@ -15,7 +15,9 @@
 
 <h5 id="explanation">Code Explanation</h5>
  
-<p class="explanationP">In the beginning of the code, I start creating the systems that will be used to generate the board for the user based on the settings chosen in the program. The `createNewBoard` is dependent on the `buildNumberSystem` function and is the basis of the board used. 
+<p class="explanationP">
+ 
+ In the beginning of the code, I start creating the systems that will be used to generate the board for the user based on the settings chosen in the program. The `createNewBoard` is dependent on the `buildNumberSystem` function and is the basis of the board used. 
 
 The `buildNumberSystem` takes the amount of cards that are saved in settings, duplicates that value, and then inserts it into a list to create pairs. The `createNewBoard` takes the `numberSystem` built and creates a set number of rows based on those values (only 10 cards per row). It then takes the newly created board and inserts 'Row' into the first index of every list and '|' into the second index for formatting. `createNewboard` then creates a brand new Column list and another list that contains '--' for formatting. It takes the two newly created lists and stacks them onto the top of the board for a fully formatted program.
 
@@ -26,7 +28,9 @@ The `buildNumberSystem` takes the amount of cards that are saved in settings, du
 <hr width="70%" border="1px solid black">
 <img id="main" src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Main_Menu.png?raw=true" alt="Main Menu screen" height="250">
 
-<p class="explanationP">Moving down into the `game()`, there are values that are set as function global variables for the entire program to use. The `mainMenu()` contains the, you guessed it, Main Menu. If Settings was somehow bypassed, it will just greet the user as defaultUser and then requests them to select a menu option. Based on the user's choice, it will run the appropriate function of the program.
+<p class="explanationP">
+ 
+Moving down into the `game()`, there are values that are set as function global variables for the entire program to use. The `mainMenu()` contains the, you guessed it, Main Menu. If Settings was somehow bypassed, it will just greet the user as defaultUser and then requests them to select a menu option. Based on the user's choice, it will run the appropriate function of the program.
 
 `reloadSettings()` is a function that will open the settings file and then update the global variables based on the files contents. If the settings file is formatted improperly or is not found, it will re-run the setup function.
 
@@ -35,14 +39,18 @@ The `buildNumberSystem` takes the amount of cards that are saved in settings, du
 <hr width="70%" border="1px solid black" class="partialBorder"> 
 <img src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Main.png?raw=true" alt="Main Game screen" height="250">
 
-<p class="explanationP">`newGame()` is the meat and bones of this program and is where the real magic happens. It sets a `consoleClear()` at the top of the program that checks which OS the user is using and will run the appropriate `clear()` to clear the console for that specific OS when the function is called. The next portion of the code sets some inbuilt values based off of the global variables for easier use. 
+<p class="explanationP">
+ 
+ `newGame()` is the meat and bones of this program and is where the real magic happens. It sets a `consoleClear()` at the top of the program that checks which OS the user is using and will run the appropriate `clear()` to clear the console for that specific OS when the function is called. The next portion of the code sets some inbuilt values based off of the global variables for easier use. 
 
 `newGame()` uses a while statement to continuously run the program until all the lives are exhausted. The top of the loop will print an `obscureBoard` and then sets a variable, which will be used as a verification based on the board size to make sure columns that the user selects are within bounds. The `formatter()` local function will format any coordinates passed into it into a universal format and then returns those coordinates to the variable assigned.</p>
 
 <hr width="70%" border="1px solid black" class="partialBorder">
 <img src="https://github.com/jmartell72/SchoolProjects/blob/main/Sophia.org/Introduction%20to%20Python%20-%20Final%20Project/imgs/Memory_Game_Errors.png?raw=true" alt="Errors screen" height="250">
 
-<p class="explanationP">The program moves into another `while` loop in order to make sure the coordinates the user entered are within bounds, `card2` is not a duplicate of `card1`, and if a string is entered that cannot be formatted, it will request that the card's coordinates be re-entered. This loop will also catch a `sys.exit()` and then exit the program.
+<p class="explanationP">
+ 
+ The program moves into another `while` loop in order to make sure the coordinates the user entered are within bounds, `card2` is not a duplicate of `card1`, and if a string is entered that cannot be formatted, it will request that the card's coordinates be re-entered. This loop will also catch a `sys.exit()` and then exit the program.
 
 The program then sets a variable `obscure` to be an obscured board and then runs `revealedCards()` and prints out the new obscured board. It evaluates if match is true; if true, it will notify the user and request the user to enter any key to move on. Once moved on, it will clear the console and check to see if foundCards matches all card values. If it does match, it will break the while loop and run the win script below. If match is false, it will deduct a life, request the user enter any key to continue, and then continue the program.</p>
 
