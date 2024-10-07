@@ -2,7 +2,7 @@
 
 <h2>- Memory Game</h2>
 
-<!-- This is used for my webpage which you can check out at: -->
+<!-- This is used for my webpage which you can check out at: https://jmartell72.github.io/-->
 <div id="carouselHolder"></div>
 
 <h3>Created with Python3</h3>
