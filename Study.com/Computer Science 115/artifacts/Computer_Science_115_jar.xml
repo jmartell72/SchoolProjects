@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Computer Science 115:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Computer_Science_115_jar</output-path>
-    <root id="archive" name="Computer Science 115.jar">
-      <element id="module-output" name="Computer Science 115" />
-    </root>
-  </artifact>
-</component>
