@@ -1,4 +1,4 @@
-<h1>Web Devlopment Final Project</h1>
+<h1>Web Development Final Project</h1>
 
 <h2>- Book Haven Website</h2>
 
